@@ -23,13 +23,13 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("¡Hola a todos! Estamos iniciando nuestra práctica de Git.");
+                    Funciones.mostrarSaludo();
                     break;
                 case 2:
-                    System.out.println("Este es el grupo formado por: Guillermo e Ignacio.");
+                    Funciones.mostrarInfo();
                     break;
                 case 3:
-                    System.out.println("¡Adiós! Gracias por usar nuestra aplicación.");
+                    Funciones.mostrarDespedida();
                     break;
                 case 0:
                     System.out.println("Cerrando el programa...");
