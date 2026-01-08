@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
         int opcion = -1;
 
         while (opcion != 0) {
@@ -12,14 +11,7 @@ public class Main {
             System.out.println("3. Mostrar despedida");
             System.out.println("0. Salir");
             System.out.print("Elige una opción: ");
-
-            if (teclado.hasNextInt()) {
-                opcion = teclado.nextInt();
-            } else {
-                teclado.next();
-                System.out.println("Por favor, introduce un número válido.");
-                continue;
-            }
+            opcion=Leer.datoInt();
 
             switch (opcion) {
                 case 1:
@@ -38,6 +30,5 @@ public class Main {
                     System.out.println("Opción no válida, intenta de nuevo.");
             }
         }
-        teclado.close();
     }
 }
