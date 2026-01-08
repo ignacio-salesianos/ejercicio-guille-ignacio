@@ -13,11 +13,10 @@ public class Main {
             System.out.println("0. Salir");
             System.out.print("Elige una opción: ");
 
-            // Leer opción del usuario
             if (teclado.hasNextInt()) {
                 opcion = teclado.nextInt();
             } else {
-                teclado.next(); // Limpiar entrada si no es un número
+                teclado.next();
                 System.out.println("Por favor, introduce un número válido.");
                 continue;
             }
@@ -27,7 +26,7 @@ public class Main {
                     System.out.println("¡Hola a todos! Estamos iniciando nuestra práctica de Git.");
                     break;
                 case 2:
-                    System.out.println("Este es el grupo formado por: [Nombre 1] y [Nombre 2].");
+                    System.out.println("Este es el grupo formado por: Guillermo e Ignacio.");
                     break;
                 case 3:
                     System.out.println("¡Adiós! Gracias por usar nuestra aplicación.");
